@@ -1,0 +1,31 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJNIEZpa3JpIiwiZW1haWwiOiJlbWFpbEBnbWFpbC5jb20iLCJpYXQiOjE3MjIxNjY0MzIsImV4cCI6MTcyMjE2NjQ0N30.4iiwjHMmn_hxcVL26KdEV57tXRUVqOT7BYt8wkW2nCI
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "M Fikri 2",
+    "email": "email@gmail2.com",
+    "password": "12345",
+    "confPassword": "123457"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "email@gmail.com",
+    "password": "12345"
+}
+
+###
+
+GET http://localhost:5000/token
+
+
+###
+
+DELETE http://localhost:5000/logout
